@@ -3,23 +3,19 @@
 int calculatingAge(int days, int month, int yr){
 
     //receive data show days
-    int thisYear = 2022;
-    int ageInDays;
-    ageInDays =  days / 365;
+     days += ((yr*365)+(month * 12));
 
-    printf("Your year of birth: %i\n", ageInDays);
+    printf("Your days of birth: %i\n", days);
 
     return 0;
 }
 
 
 int main(){
-    int days;
-   printf("Type ur days:");
-   //age = 21;
-   scanf("%i", days); 
-   system("pause");
-   //send day month yr
-   calculatingAge(days);
+    int days = 27;
+    int month = 4;
+    int year = 2001;
+   
+   calculatingAge(days,month,year);
     return 0;
 }
